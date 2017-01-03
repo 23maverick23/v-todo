@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin-top: 0;
+}
+
+#app-main {
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.content-column {
+    height: 100%;
+    min-height: 575px;
+}

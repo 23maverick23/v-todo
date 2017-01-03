@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+
+    "name": "v-Todo",
+    "short_name": "v-Todo",
+    "version": "0.1",
+    "description": "New tab todo replacement.",
+
+    "author": "Ryan Morrissey @rymoio",
+    "homepage_url": "https://rymo.io/",
+
+    "icons": {},
+    "background": {
+        "scripts": [
+            "dist/build.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": {},
+        "default_popup": "popup.html",
+        "default_title": "Todo"
+    },
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "tabs"
+    ],
+    "options_page": "options.html",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "offline_enabled": true,
+    "web_accessible_resources": [],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
